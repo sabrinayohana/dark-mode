@@ -1,0 +1,191 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 600px;
+  gap: 100px;
+  justify-content: center;
+  background-color: #DA0037;
+  align-items: center;
+}
+
+header p {
+  font-size: 4rem;
+  color: white;
+  justify-content: center;
+  font-style: italic;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo {
+  max-width: 200%;
+  max-height: 150%;
+  display: flex;
+}
+
+article {
+  width: 100%;
+  border: 1px solid #06aa48;
+  margin: 10px;
+}
+
+.img2 {
+  width: 100%;
+}
+
+p {
+ 
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+figcaption {
+
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+
+h2 {
+  text-align: justify;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+main {
+  display: grid;
+  margin: 1px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 640px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1020px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #DA0037;
+  color: white;
+}
+
+.dark{
+  background-color:#171717;
+  color: #DA0037;
+}
+.light{
+  background-color:#FFFFD0;
+  color:#A555EC;
+}
+
+body{
+  font-family:cursive;
+}
+
+button{
+  border-radius: 70px;
+  border-width: 1px;
+  background-color:#DA0037;
+  color:white; 
+  border-color:  white;
+  text-size-adjust: 2px; 
+  
+}
+
+
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #171717;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 60px;
+}
+
+centering
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
